@@ -19,6 +19,22 @@ body {
 .top {
     height: 112px;
 }
+
+.bottom {
+    display: flex;
+    height: calc(100% - 112px);
+    margin-top: 6px;
+
+    .left {
+        width: 70%;
+        overflow-y: auto;
+    }
+
+    .right {
+        width: 30%;
+    }
+}
+
 /*utilities*/
 .d-flex {
     display: flex;
@@ -36,6 +52,7 @@ body {
     --bc-search: #3c3c3c;
     --bc-lighter-text: #6c6c6c;
 }
+
 /*header*/
 .top-header {
     display: flex;
