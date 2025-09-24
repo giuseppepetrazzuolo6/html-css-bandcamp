@@ -98,3 +98,29 @@ body {
         font-size: 16px;
     }
 }
+
+/*main*/
+
+.album-col {
+    width: calc(100% / 4);
+
+}
+
+.card {
+    padding: 1rem;
+}
+
+span {
+    color: var(--bc-white);
+}
+
+h4 {
+    color: var(--bc-white);
+    margin-bottom: 5px;
+}
+
+.genre {
+    color: var(--bc-lighter-text);
+    display: block;
+    margin-top: 5px;
+}
