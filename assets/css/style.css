@@ -124,3 +124,42 @@ h4 {
     display: block;
     margin-top: 5px;
 }
+
+.play {
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.icon {
+    font-size: 50px;
+    color: var(--bc-white);
+}
+
+.btn {
+    a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding: 15px 25px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+
+    }
+
+    .lighter {
+        background-color: aliceblue;
+        color: black;
+    }
+
+    .darker {
+        background-color: var(--bc-background);
+        color: var(--bc-white);
+        margin-bottom: 15px;
+        border: 1px solid var(--bc-white)
+    }
+
+
+}
