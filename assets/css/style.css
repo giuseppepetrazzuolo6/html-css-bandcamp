@@ -87,6 +87,10 @@ body {
     }
 }
 
+.logo-mobile{
+    display: none;
+}
+
 .bottom-header {
     padding: 10px;
     background-color: var(--bc-header);
@@ -274,6 +278,14 @@ h4 {
 
 @media screen and (max-width: 600px) {
 
+    .logo{
+        img:first-child{
+            display: none;
+        }
+    }
+    .logo-mobile{
+        display: block;
+    }
     .container {
         padding: 0.5rem;
     }
