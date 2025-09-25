@@ -28,10 +28,15 @@ body {
     .left {
         width: 70%;
         overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--bc-search) var(--bc-background);
     }
 
     .right {
         width: 30%;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--bc-search) var(--bc-background);
     }
 }
 
@@ -60,10 +65,6 @@ body {
     align-items: center;
     padding: 10px;
 
-    input {
-        border-radius: 5px;
-    }
-
     a {
         text-decoration: none;
         color: var(--bc-white);
@@ -81,6 +82,7 @@ body {
         border-style: none;
         font-size: 16px;
         width: 350px;
+        border-radius: 5px;
     }
 }
 
@@ -160,13 +162,116 @@ h4 {
         margin-bottom: 15px;
         border: 1px solid var(--bc-white)
     }
+}
 
+.artist {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
 
+    .artist-logo {
+        width: 20%;
+    }
+
+    .artist-info {}
 }
 
 /*responsive rules*/
-@media screen and (max-width: 744px) {}
+@media screen and (max-width: 744px) {
 
+    .top {
+        height: 100px;
+    }
+
+    .top-header {
+        padding: 8px;
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    .logo {
+        display: flex;
+
+        input {
+            padding: 8px;
+            font-size: 14px;
+        }
+    }
+
+    .bottom-header {
+        padding: 8px;
+
+        input {
+            padding: 8px;
+            margin-left: 20px;
+            width: 450px;
+            font-size: 14px;
+        }
+    }
+
+    .container {
+        padding: 0.3rem;
+    }
+
+    .card {
+        padding: 0.3rem;
+    }
+
+    .bottom {
+        height: calc(100% - 100px);
+        margin-top: 6px;
+
+        .left {
+            width: 70%;
+        }
+
+        .right {
+            width: 30%;
+        }
+
+        .album-col {
+            width: calc(100% / 2);
+
+        }
+    }
+
+    .play {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+
+
+    .btn {
+        a {
+            padding: 10px 25px;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .lighter {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .darker {
+            margin-bottom: 10px;
+        }
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
 
